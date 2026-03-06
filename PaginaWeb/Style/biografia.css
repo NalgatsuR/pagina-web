@@ -1,0 +1,179 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+
+.container {
+    max-width: 1500px;
+    margin: auto;
+}
+
+header {
+    background-color: #1623e2; 
+}
+
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 1.6em;
+    text-align: center;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+
+}
+
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: rgb(0, 12, 124);
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    text-align: center;
+    height: 20vh;
+    padding-top: 70px;
+}
+
+#hero h1 {
+    color: rgb(0, 0, 0);
+    font-size: 3em;
+    margin: 0;
+}
+
+#historia {
+    width: 1000px;
+    border-radius: 5%;
+    border-color: rgb(0, 0, 0);
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: auto;
+    background-image: url(../UNI/periodico.png);
+}
+
+
+#historia .informacion:nth-child(1) {
+    justify-content: center;
+    align-items: center;
+    text-align: left;   
+    padding: 20px;
+}
+
+#historia .informacion:nth-child(2) {
+    justify-content: center;
+    align-items: center;
+    text-align: left;   
+    padding: 10px;
+
+}
+#historia .informacion:nth-child(3) {
+    justify-content: center;
+    align-items: center;
+    text-align: left;   
+    padding: 20px;
+
+}
+#historia .informacion:nth-child(4) {
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+
+}
+
+#historia .informacion:nth-child(5) {
+    justify-content: center;
+    align-items: center;
+    text-align: left;   
+    padding: 20px;
+
+}
+
+#historia .right p {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    height: auto;
+}
+
+#historia .container img{
+    border-radius: 5%;
+    display: flex;    
+    align-items: left;
+    width: 300px;             
+    height: 200px;          
+    margin: 20px;      
+    border: 2px solid black; 
+}
+
+#historia .img-container{
+    display: flex;   
+}
+
+@media (min-width: 720px) {
+    header {
+        position: fixed;
+        width: 100%;
+        
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+}
+   
+
+
+
+
+

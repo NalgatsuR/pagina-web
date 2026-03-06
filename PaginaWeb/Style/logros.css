@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+
+.container {
+    max-width: 1500px;
+    margin: auto;
+}
+
+header {
+    background-color: #1623e2; 
+}
+
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 1.6em;
+    text-align: center;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+
+}
+
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: rgb(0, 12, 124);
+}
+
+#info-sandino .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#info-sandino .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    background: linear-gradient(to bottom, #ff0000 50%, #000000 50%);
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+        
+}
+
+
+#info-sandino .img-container h2 {
+    padding-left: 20px;
+    gap: 20px;
+    text-align: center;
+    color: white;
+
+}
+
+#info-sandino .img-container p {
+    padding-left: 20px;
+    gap: 20px;
+    text-align: center;
+    color: white;
+}
+
+#info-sandino .info {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0px;
+}
+
+@media (min-width: 720px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    
+}
